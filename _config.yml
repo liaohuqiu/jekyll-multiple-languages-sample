@@ -12,6 +12,9 @@ baseurl:          /
 url:              http://localhost:9001
 encoding:         UTF-8
 
+exclude:
+  - "tools"
+
 # Multiple languages
 languages:          ['en', 'cn']
 
