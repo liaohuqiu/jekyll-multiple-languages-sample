@@ -16,7 +16,9 @@ if [ -z "$branch" ] || [ "$branch" != "master" ]; then
 fi
 
 jekyll build
-if [ ! -d '_site' ];then
+exe_cmd "rm -rf _site_for_pub"
+exe_cmd "cp -r _site _site_for_pub"
+if [ ! -d '_site_for_pub' ];then
     echo "not content to be published"
     exit
 fi
@@ -28,7 +30,7 @@ if [ $error_code != 0 ];then
     exit
 else
     ls | grep -v _site|xargs rm -rf
-    exe_cmd "cp -r _site/* ."
-    exe_cmd "rm -rf _site/"
+    exe_cmd "cp -r _site_for_pub/* ."
+    exe_cmd "rm -rf _site_for_pub/"
     exe_cmd "touch .nojekyll"
 fi
