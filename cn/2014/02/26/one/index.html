@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+<title>Sample for Jekyll Multiple Languages Plugin</title>
+
+<!-- Bootstrap core CSS -->
+<link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]><script src="/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9" role="main">
+          <h2>示例文章:</h2>
+
+<p><code>_posts/2014-02-26-one.cn.md</code> =&gt; <code>/cn/2014/02/26/one/</code></p>
+
+<hr>
+
+<p>如果<code>_config.yaml</code>中的选项 <code>permalink</code> 设置成<code>pretty</code>:</p>
+
+<ul>
+<li><p><code>_config.yml</code></p>
+<div class="highlight"><pre><code class="yaml language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">permalink</span><span class="p-Indicator">:</span>        <span class="l-Scalar-Plain">pretty</span>
+</code></pre></div></li>
+<li><p>[<code>index.md</code>              =&gt;    <a href="/"><code>/</code></a></p></li>
+<li><p><code>index.cn.md</code>           =&gt;    <a href="/cn/"><code>/cn/</code></a></p></li>
+<li><p><code>about.md</code>              =&gt;    <a href="/about/"><code>/about/</code></a></p></li>
+<li><p><code>cn.about.md</code>           =&gt;    <a href="/cn/about/"><code>/cn/about/</code></a></p></li>
+<li><p><code>2014-02-26-one.md</code>      =&gt;    <a href="/2014/02/26/one/"><code>/2014/02/26/one/</code></a></p></li>
+<li><p><code>2014-02-26-one.cn.md</code>   =&gt;    <a href="/cn/2014/02/26/one/"><code>/cn/2014/02/26/one/</code></a></p></li>
+<li><p><code>cn.2014-02-26-two.md</code>   =&gt;    <a href="/cn/2014/02/26/two/"><code>/cn/2014/02/26/two/</code></a></p></li>
+</ul>
+
+<hr>
+
+<p>变量:</p>
+
+<ul>
+<li><code>{{ page.language}}</code> =&gt; <code>cn</code></li>
+</ul>
+
+<hr>
+
+        </div>
+      </div>
+    </div>
+    <!-- Footer
+================================================== -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
