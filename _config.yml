@@ -1,0 +1,23 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks, default is pretty
+permalink:        pretty
+
+# Server
+host:             0.0.0.0
+port:             9001
+baseurl:          /
+url:              http://localhost:9001
+encoding:         UTF-8
+
+# Multiple languages
+languages:          ['en', 'cn']
+
+# If not config, the first of languages will be the default
+language_default:   'en'
+
+# If a post of default language not set `no_fill_default_content` to true
+# Its content will use to replace if the corresponding content of other languages is not exist.
+# fill_default_content: true
