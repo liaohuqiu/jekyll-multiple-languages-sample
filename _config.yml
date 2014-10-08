@@ -15,9 +15,9 @@ encoding:         UTF-8
 exclude:
   - "tools"
 
+# Multiple languages
 gems:           ['jekyll-multiple-languages']
 
-# Multiple languages
 languages:          ['en', 'cn']
 
 # If not config, the first of languages will be the default
