@@ -1,5 +1,5 @@
 # Ignore docs files
-_site_for_pub/
+_site/
 .ruby-version
 
 # Numerous always-ignore extensions
