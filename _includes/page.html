@@ -1,19 +1,32 @@
-* `_config.yml`
+# {{ page.path }} => {{ page.url }}
 
-    ```yaml
-    permalink:        pretty
-    ```
+{% if page.language == 'cn' %}
 
-*   [`index.md`              =>    [`/`](/)
+### 这是静态页面(`Jekyll::Page`)
 
-*   `index.cn.md`           =>    [`/cn/`](/cn/)
+这个是静态页面。
 
-*   `about.md`              =>    [`/about/`](/about/)
+这个是静态页面。
 
-*   `cn.about.md`           =>    [`/cn/about/`](/cn/about/)
+这个是静态页面。
 
-*   `2014-02-26-one.md`      =>    [`/2014/02/26/one/`](/2014/02/26/one/)
+这个是静态页面。
 
-*   `2014-02-26-one.cn.md`   =>    [`/cn/2014/02/26/one/`](/cn/2014/02/26/one/)
+{% else %}
 
-*   `cn.2014-02-26-two.md`   =>    [`/cn/2014/02/26/two/`](/cn/2014/02/26/two/)
+### This is a page(`Jekyll::Page`)
+
+This is a page.
+
+This is a page.
+
+This is a page.
+
+This is a page.
+
+{% endif %}
+
+{% include page-variables.html %}
+
+{% include site-variables.html %}
+

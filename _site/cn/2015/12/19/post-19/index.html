@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+<title>Sample for Jekyll Multiple Languages Plugin</title>
+
+<!-- Bootstrap core CSS -->
+<link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]><script src="/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <ul class="nav nav-tabs">
+            
+            <li role="presentation"><a href="/">English</a></li>
+            <li class='active' role="presentation"><a href="/cn">中文</a></li>
+            
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" role="main">
+            <h1 id="_posts-2015-12-19-post-19-cn-md-gt-cn-2015-12-19-post-19">_posts/2015-12-19-post-19.cn.md =&gt; /cn/2015/12/19/post-19/</h1>
+
+<h3 id="这个是示例文章-jekyll-document">这个是示例文章(<code>Jekyll::Document</code>)</h3>
+
+<p>这个是示例文章。</p>
+
+<p>这个是示例文章。</p>
+
+<p>这个是示例文章。</p>
+
+<p>这个是示例文章。</p>
+
+<hr>
+
+<h4 id="变量">变量</h4>
+
+<ul>
+<li><p><code>page.url</code> =&gt; <code>/cn/2015/12/19/post-19/</code></p></li>
+<li><p><code>page.url_no_language</code> =&gt; <code>/2015/12/19/post-19/</code></p></li>
+<li><p><code>page.path</code> =&gt; <code>_posts/2015-12-19-post-19.cn.md</code></p></li>
+<li><p><code>page.language</code> =&gt; <code>cn</code></p></li>
+<li><p><code>page.is_default_language</code> =&gt; <code>false</code></p></li>
+</ul>
+
+<hr>
+
+<h4 id="所有的页面和文章">所有的页面和文章</h4>
+
+<ul>
+<li><p><code>site.pages</code></p>
+
+<ul>
+<li>  <p><code>about.cn.md</code>              =&gt;    <a href="/cn/about/">/cn/about/</a></p></li>
+<li>  <p><code>about.md</code>              =&gt;    <a href="/about/">/about/</a></p></li>
+<li>  <p><code>index.cn.md</code>              =&gt;    <a href="/cn/">/cn/</a></p></li>
+<li>  <p><code>index.md</code>              =&gt;    <a href="/">/</a></p></li>
+<li>  <p><code>index/page2/index.cn.md</code>              =&gt;    <a href="/cn/index/page2/">/cn/index/page2/</a></p></li>
+<li>  <p><code>index/page3/index.cn.md</code>              =&gt;    <a href="/cn/index/page3/">/cn/index/page3/</a></p></li>
+<li>  <p><code>index/page2/index.md</code>              =&gt;    <a href="/index/page2/">/index/page2/</a></p></li>
+<li>  <p><code>index/page3/index.md</code>              =&gt;    <a href="/index/page3/">/index/page3/</a></p></li>
+</ul>
+
+<hr></li>
+<li><p><code>site.posts</code></p>
+
+<ul>
+<li>  <p><code>_posts/2015-12-26-post-26.md</code>              =&gt;    <a href="/2015/12/26/post-26/">/2015/12/26/post-26/</a></p></li>
+<li>  <p><code>_posts/2015-12-26-post-26.cn.md</code>              =&gt;    <a href="/cn/2015/12/26/post-26/">/cn/2015/12/26/post-26/</a></p></li>
+<li>  <p><code>_posts/2015-12-25-post-25.md</code>              =&gt;    <a href="/2015/12/25/post-25/">/2015/12/25/post-25/</a></p></li>
+<li>  <p><code>_posts/2015-12-25-post-25.cn.md</code>              =&gt;    <a href="/cn/2015/12/25/post-25/">/cn/2015/12/25/post-25/</a></p></li>
+<li>  <p><code>_posts/2015-12-24-post-24.md</code>              =&gt;    <a href="/2015/12/24/post-24/">/2015/12/24/post-24/</a></p></li>
+<li>  <p><code>_posts/2015-12-24-post-24.cn.md</code>              =&gt;    <a href="/cn/2015/12/24/post-24/">/cn/2015/12/24/post-24/</a></p></li>
+<li>  <p><code>_posts/2015-12-23-post-23.md</code>              =&gt;    <a href="/2015/12/23/post-23/">/2015/12/23/post-23/</a></p></li>
+<li>  <p><code>_posts/2015-12-23-post-23.cn.md</code>              =&gt;    <a href="/cn/2015/12/23/post-23/">/cn/2015/12/23/post-23/</a></p></li>
+<li>  <p><code>_posts/2015-12-22-post-22.md</code>              =&gt;    <a href="/2015/12/22/post-22/">/2015/12/22/post-22/</a></p></li>
+<li>  <p><code>_posts/2015-12-22-post-22.cn.md</code>              =&gt;    <a href="/cn/2015/12/22/post-22/">/cn/2015/12/22/post-22/</a></p></li>
+<li>  <p><code>_posts/2015-12-21-post-21.md</code>              =&gt;    <a href="/2015/12/21/post-21/">/2015/12/21/post-21/</a></p></li>
+<li>  <p><code>_posts/2015-12-21-post-21.cn.md</code>              =&gt;    <a href="/cn/2015/12/21/post-21/">/cn/2015/12/21/post-21/</a></p></li>
+<li>  <p><code>_posts/2015-12-20-post-20.md</code>              =&gt;    <a href="/2015/12/20/post-20/">/2015/12/20/post-20/</a></p></li>
+<li>  <p><code>_posts/2015-12-20-post-20.cn.md</code>              =&gt;    <a href="/cn/2015/12/20/post-20/">/cn/2015/12/20/post-20/</a></p></li>
+<li>  <p><code>_posts/2015-12-19-post-19.md</code>              =&gt;    <a href="/2015/12/19/post-19/">/2015/12/19/post-19/</a></p></li>
+<li>  <p><code>_posts/2015-12-19-post-19.cn.md</code>              =&gt;    <a href="/cn/2015/12/19/post-19/">/cn/2015/12/19/post-19/</a></p></li>
+<li>  <p><code>_posts/2015-12-18-post-18.md</code>              =&gt;    <a href="/2015/12/18/post-18/">/2015/12/18/post-18/</a></p></li>
+<li>  <p><code>_posts/2015-12-18-post-18.cn.md</code>              =&gt;    <a href="/cn/2015/12/18/post-18/">/cn/2015/12/18/post-18/</a></p></li>
+<li>  <p><code>_posts/2015-12-17-post-17.md</code>              =&gt;    <a href="/2015/12/17/post-17/">/2015/12/17/post-17/</a></p></li>
+<li>  <p><code>_posts/2015-12-17-post-17.cn.md</code>              =&gt;    <a href="/cn/2015/12/17/post-17/">/cn/2015/12/17/post-17/</a></p></li>
+<li>  <p><code>_posts/2015-12-16-post-16.md</code>              =&gt;    <a href="/2015/12/16/post-16/">/2015/12/16/post-16/</a></p></li>
+<li>  <p><code>_posts/2015-12-16-post-16.cn.md</code>              =&gt;    <a href="/cn/2015/12/16/post-16/">/cn/2015/12/16/post-16/</a></p></li>
+<li>  <p><code>_posts/2015-12-15-post-15.md</code>              =&gt;    <a href="/2015/12/15/post-15/">/2015/12/15/post-15/</a></p></li>
+<li>  <p><code>_posts/2015-12-15-post-15.cn.md</code>              =&gt;    <a href="/cn/2015/12/15/post-15/">/cn/2015/12/15/post-15/</a></p></li>
+<li>  <p><code>_posts/2015-12-14-post-14.md</code>              =&gt;    <a href="/2015/12/14/post-14/">/2015/12/14/post-14/</a></p></li>
+<li>  <p><code>_posts/2015-12-14-post-14.cn.md</code>              =&gt;    <a href="/cn/2015/12/14/post-14/">/cn/2015/12/14/post-14/</a></p></li>
+<li>  <p><code>_posts/2015-12-13-post-13.md</code>              =&gt;    <a href="/2015/12/13/post-13/">/2015/12/13/post-13/</a></p></li>
+<li>  <p><code>_posts/2015-12-13-post-13.cn.md</code>              =&gt;    <a href="/cn/2015/12/13/post-13/">/cn/2015/12/13/post-13/</a></p></li>
+<li>  <p><code>_posts/2015-12-12-post-12.md</code>              =&gt;    <a href="/2015/12/12/post-12/">/2015/12/12/post-12/</a></p></li>
+<li>  <p><code>_posts/2015-12-12-post-12.cn.md</code>              =&gt;    <a href="/cn/2015/12/12/post-12/">/cn/2015/12/12/post-12/</a></p></li>
+<li>  <p><code>_posts/2015-12-11-post-11.md</code>              =&gt;    <a href="/2015/12/11/post-11/">/2015/12/11/post-11/</a></p></li>
+<li>  <p><code>_posts/2015-12-11-post-11.cn.md</code>              =&gt;    <a href="/cn/2015/12/11/post-11/">/cn/2015/12/11/post-11/</a></p></li>
+<li>  <p><code>_posts/2015-12-10-post-10.md</code>              =&gt;    <a href="/2015/12/10/post-10/">/2015/12/10/post-10/</a></p></li>
+<li>  <p><code>_posts/2015-12-10-post-10.cn.md</code>              =&gt;    <a href="/cn/2015/12/10/post-10/">/cn/2015/12/10/post-10/</a></p></li>
+<li>  <p><code>_posts/2015-12-9-post-9.md</code>              =&gt;    <a href="/2015/12/09/post-9/">/2015/12/09/post-9/</a></p></li>
+<li>  <p><code>_posts/2015-12-9-post-9.cn.md</code>              =&gt;    <a href="/cn/2015/12/09/post-9/">/cn/2015/12/09/post-9/</a></p></li>
+<li>  <p><code>_posts/2015-12-8-post-8.md</code>              =&gt;    <a href="/2015/12/08/post-8/">/2015/12/08/post-8/</a></p></li>
+<li>  <p><code>_posts/2015-12-8-post-8.cn.md</code>              =&gt;    <a href="/cn/2015/12/08/post-8/">/cn/2015/12/08/post-8/</a></p></li>
+<li>  <p><code>_posts/2015-12-7-post-7.md</code>              =&gt;    <a href="/2015/12/07/post-7/">/2015/12/07/post-7/</a></p></li>
+<li>  <p><code>_posts/2015-12-7-post-7.cn.md</code>              =&gt;    <a href="/cn/2015/12/07/post-7/">/cn/2015/12/07/post-7/</a></p></li>
+<li>  <p><code>_posts/2015-12-6-post-6.md</code>              =&gt;    <a href="/2015/12/06/post-6/">/2015/12/06/post-6/</a></p></li>
+<li>  <p><code>_posts/2015-12-6-post-6.cn.md</code>              =&gt;    <a href="/cn/2015/12/06/post-6/">/cn/2015/12/06/post-6/</a></p></li>
+<li>  <p><code>_posts/2015-12-5-post-5.md</code>              =&gt;    <a href="/2015/12/05/post-5/">/2015/12/05/post-5/</a></p></li>
+<li>  <p><code>_posts/2015-12-5-post-5.cn.md</code>              =&gt;    <a href="/cn/2015/12/05/post-5/">/cn/2015/12/05/post-5/</a></p></li>
+<li>  <p><code>_posts/2015-12-4-post-4.md</code>              =&gt;    <a href="/2015/12/04/post-4/">/2015/12/04/post-4/</a></p></li>
+<li>  <p><code>_posts/2015-12-4-post-4.cn.md</code>              =&gt;    <a href="/cn/2015/12/04/post-4/">/cn/2015/12/04/post-4/</a></p></li>
+<li>  <p><code>_posts/2015-12-3-post-3.md</code>              =&gt;    <a href="/2015/12/03/post-3/">/2015/12/03/post-3/</a></p></li>
+<li>  <p><code>_posts/2015-12-3-post-3.cn.md</code>              =&gt;    <a href="/cn/2015/12/03/post-3/">/cn/2015/12/03/post-3/</a></p></li>
+<li>  <p><code>_posts/2015-12-2-post-2.md</code>              =&gt;    <a href="/2015/12/02/post-2/">/2015/12/02/post-2/</a></p></li>
+<li>  <p><code>_posts/2015-12-2-post-2.cn.md</code>              =&gt;    <a href="/cn/2015/12/02/post-2/">/cn/2015/12/02/post-2/</a></p></li>
+<li>  <p><code>_posts/2015-12-1-post-1.md</code>              =&gt;    <a href="/2015/12/01/post-1/">/2015/12/01/post-1/</a></p></li>
+<li>  <p><code>_posts/2015-12-1-post-1.cn.md</code>              =&gt;    <a href="/cn/2015/12/01/post-1/">/cn/2015/12/01/post-1/</a></p></li>
+</ul>
+
+<hr></li>
+<li><p><code>site.posts_by_language[&#39;cn&#39;]</code></p>
+
+<ul>
+<li>  <p><code>_posts/2015-12-26-post-26.cn.md</code>              =&gt;    <a href="/cn/2015/12/26/post-26/">/cn/2015/12/26/post-26/</a></p></li>
+<li>  <p><code>_posts/2015-12-25-post-25.cn.md</code>              =&gt;    <a href="/cn/2015/12/25/post-25/">/cn/2015/12/25/post-25/</a></p></li>
+<li>  <p><code>_posts/2015-12-24-post-24.cn.md</code>              =&gt;    <a href="/cn/2015/12/24/post-24/">/cn/2015/12/24/post-24/</a></p></li>
+<li>  <p><code>_posts/2015-12-23-post-23.cn.md</code>              =&gt;    <a href="/cn/2015/12/23/post-23/">/cn/2015/12/23/post-23/</a></p></li>
+<li>  <p><code>_posts/2015-12-22-post-22.cn.md</code>              =&gt;    <a href="/cn/2015/12/22/post-22/">/cn/2015/12/22/post-22/</a></p></li>
+<li>  <p><code>_posts/2015-12-21-post-21.cn.md</code>              =&gt;    <a href="/cn/2015/12/21/post-21/">/cn/2015/12/21/post-21/</a></p></li>
+<li>  <p><code>_posts/2015-12-20-post-20.cn.md</code>              =&gt;    <a href="/cn/2015/12/20/post-20/">/cn/2015/12/20/post-20/</a></p></li>
+<li>  <p><code>_posts/2015-12-19-post-19.cn.md</code>              =&gt;    <a href="/cn/2015/12/19/post-19/">/cn/2015/12/19/post-19/</a></p></li>
+<li>  <p><code>_posts/2015-12-18-post-18.cn.md</code>              =&gt;    <a href="/cn/2015/12/18/post-18/">/cn/2015/12/18/post-18/</a></p></li>
+<li>  <p><code>_posts/2015-12-17-post-17.cn.md</code>              =&gt;    <a href="/cn/2015/12/17/post-17/">/cn/2015/12/17/post-17/</a></p></li>
+<li>  <p><code>_posts/2015-12-16-post-16.cn.md</code>              =&gt;    <a href="/cn/2015/12/16/post-16/">/cn/2015/12/16/post-16/</a></p></li>
+<li>  <p><code>_posts/2015-12-15-post-15.cn.md</code>              =&gt;    <a href="/cn/2015/12/15/post-15/">/cn/2015/12/15/post-15/</a></p></li>
+<li>  <p><code>_posts/2015-12-14-post-14.cn.md</code>              =&gt;    <a href="/cn/2015/12/14/post-14/">/cn/2015/12/14/post-14/</a></p></li>
+<li>  <p><code>_posts/2015-12-13-post-13.cn.md</code>              =&gt;    <a href="/cn/2015/12/13/post-13/">/cn/2015/12/13/post-13/</a></p></li>
+<li>  <p><code>_posts/2015-12-12-post-12.cn.md</code>              =&gt;    <a href="/cn/2015/12/12/post-12/">/cn/2015/12/12/post-12/</a></p></li>
+<li>  <p><code>_posts/2015-12-11-post-11.cn.md</code>              =&gt;    <a href="/cn/2015/12/11/post-11/">/cn/2015/12/11/post-11/</a></p></li>
+<li>  <p><code>_posts/2015-12-10-post-10.cn.md</code>              =&gt;    <a href="/cn/2015/12/10/post-10/">/cn/2015/12/10/post-10/</a></p></li>
+<li>  <p><code>_posts/2015-12-9-post-9.cn.md</code>              =&gt;    <a href="/cn/2015/12/09/post-9/">/cn/2015/12/09/post-9/</a></p></li>
+<li>  <p><code>_posts/2015-12-8-post-8.cn.md</code>              =&gt;    <a href="/cn/2015/12/08/post-8/">/cn/2015/12/08/post-8/</a></p></li>
+<li>  <p><code>_posts/2015-12-7-post-7.cn.md</code>              =&gt;    <a href="/cn/2015/12/07/post-7/">/cn/2015/12/07/post-7/</a></p></li>
+<li>  <p><code>_posts/2015-12-6-post-6.cn.md</code>              =&gt;    <a href="/cn/2015/12/06/post-6/">/cn/2015/12/06/post-6/</a></p></li>
+<li>  <p><code>_posts/2015-12-5-post-5.cn.md</code>              =&gt;    <a href="/cn/2015/12/05/post-5/">/cn/2015/12/05/post-5/</a></p></li>
+<li>  <p><code>_posts/2015-12-4-post-4.cn.md</code>              =&gt;    <a href="/cn/2015/12/04/post-4/">/cn/2015/12/04/post-4/</a></p></li>
+<li>  <p><code>_posts/2015-12-3-post-3.cn.md</code>              =&gt;    <a href="/cn/2015/12/03/post-3/">/cn/2015/12/03/post-3/</a></p></li>
+<li>  <p><code>_posts/2015-12-2-post-2.cn.md</code>              =&gt;    <a href="/cn/2015/12/02/post-2/">/cn/2015/12/02/post-2/</a></p></li>
+<li>  <p><code>_posts/2015-12-1-post-1.cn.md</code>              =&gt;    <a href="/cn/2015/12/01/post-1/">/cn/2015/12/01/post-1/</a></p></li>
+</ul>
+
+<hr></li>
+<li><p><code>site.pages_by_language[&#39;cn&#39;]</code></p>
+
+<ul>
+<li>  <p><code>about.cn.md</code>              =&gt;    <a href="/cn/about/">/cn/about/</a></p></li>
+<li>  <p><code>index.cn.md</code>              =&gt;    <a href="/cn/">/cn/</a></p></li>
+<li>  <p><code>index/page2/index.cn.md</code>              =&gt;    <a href="/cn/index/page2/">/cn/index/page2/</a></p></li>
+<li>  <p><code>index/page3/index.cn.md</code>              =&gt;    <a href="/cn/index/page3/">/cn/index/page3/</a></p></li>
+</ul></li>
+</ul>
+
+        </div>
+    </div>
+</div>
+<!-- Footer
+================================================== -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/dist/js/jquery.min.js"></script>
+<script src="/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

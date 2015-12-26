@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include header.html %}
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9" role="main">
-          {{ content }}
-        </div>
-      </div>
+<head>
+{% include header.html %}
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <ul class="nav nav-tabs">
+            {% if page.language == 'cn' %}
+            <li role="presentation"><a href="/">English</a></li>
+            <li class='active' role="presentation"><a href="/cn">中文</a></li>
+            {% else %}
+            <li class='active' role="presentation"><a href="/">English</a></li>
+            <li role="presentation"><a href="/cn">中文</a></li>
+            {% endif %}
+        </ul>
     </div>
-    {% include footer.html %}
-  </body>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" role="main">
+            {{ content }}
+        </div>
+    </div>
+</div>
+{% include footer.html %}
+</body>
 </html>

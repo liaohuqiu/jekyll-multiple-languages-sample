@@ -1,9 +1,17 @@
 # Dependencies
+#
 markdown:         redcarpet
-pygments:         true
+
+redcarpet:
+  extensions:   ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 # Permalinks, default is pretty
 permalink:        pretty
+
+highlighter:       pygments
+
+paginate:       10
+paginate_path:  "index/page:num"
 
 # Server
 host:             0.0.0.0
@@ -16,13 +24,9 @@ exclude:
   - "tools"
 
 # Multiple languages
-gems:           ['jekyll-multiple-languages']
+gems:           ['jekyll-paginate', 'jekyll-multiple-languages']
 
 languages:          ['en', 'cn']
 
 # If not config, the first of languages will be the default
 language_default:   'en'
-
-# If a post of default language not set `no_fill_default_content` to true
-# Its content will use to replace if the corresponding content of other languages is not exist.
-# fill_default_content: true
