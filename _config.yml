@@ -11,7 +11,7 @@ permalink:        pretty
 highlighter:       pygments
 
 paginate:       10
-paginate_path:  "index/page:num"
+paginate_path:  "/index/page:num"
 
 # Server
 host:             0.0.0.0

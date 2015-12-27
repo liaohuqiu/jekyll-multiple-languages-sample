@@ -1,16 +1,8 @@
-# {{ page.path }} => {{ page.url }}
-
 {% if page.language == 'cn' %}
 
-### 这个是示例文章(`Jekyll::Document`)
+### 这个是文章(`Jekyll::Document`)
 
-这个是示例文章。
-
-这个是示例文章。
-
-这个是示例文章。
-
-这个是示例文章。
+这个是文章。
 
 {% else %}
 
@@ -18,19 +10,12 @@
 
 This is a post.
 
-This is a post.
-
-This is a post.
-
-This is a post.
-
-This is a post.
-
-This is a post.
-
 {% endif %}
+
+{% include page-variables-jekyll.html %}
 
 {% include page-variables.html %}
 
-{% include site-variables.html %}
+{% include post-variables-only.html %}
 
+{% include site-variables.html %}

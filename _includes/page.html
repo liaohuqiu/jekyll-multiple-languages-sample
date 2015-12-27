@@ -1,16 +1,8 @@
-# {{ page.path }} => {{ page.url }}
-
 {% if page.language == 'cn' %}
 
-### 这是静态页面(`Jekyll::Page`)
+### 这是普通页面(`Jekyll::Page`)
 
-这个是静态页面。
-
-这个是静态页面。
-
-这个是静态页面。
-
-这个是静态页面。
+这个是普通页面。
 
 {% else %}
 
@@ -18,13 +10,9 @@
 
 This is a page.
 
-This is a page.
-
-This is a page.
-
-This is a page.
-
 {% endif %}
+
+{% include page-variables-jekyll.html %}
 
 {% include page-variables.html %}
 
