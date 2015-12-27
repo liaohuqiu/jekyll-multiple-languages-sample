@@ -30,43 +30,47 @@
             <li class='active' role="presentation"><a href="/">English</a></li>
             <li role="presentation"><a href="/cn">中文</a></li>
             
+            <li class='pull-right' role="presentation"><a href="https://github.com/liaohuqiu/jekyll-multiple-languages-sample/tree/master">GitHub</a></li>
         </ul>
     </div>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-md-12" role="main">
-            <h1 id="_posts-2015-12-12-post-12-md-gt-2015-12-12-post-12">_posts/2015-12-12-post-12.md =&gt; /2015/12/12/post-12/</h1>
-
-<h3 id="this-is-a-post-jekyll-document">This is a post (<code>Jekyll::Document</code>)</h3>
+            <h3 id="this-is-a-post-jekyll-document">This is a post (<code>Jekyll::Document</code>)</h3>
 
 <p>This is a post.</p>
 
-<p>This is a post.</p>
-
-<p>This is a post.</p>
-
-<p>This is a post.</p>
-
-<p>This is a post.</p>
-
-<p>This is a post.</p>
+<ul>
+<li><p><code>page.id</code> =&gt; <code>/2015/12/12/post-12</code></p></li>
+<li><p><code>page.date</code> =&gt; <code>2015-12-12 00:00:00 -0800</code></p></li>
+<li><p><code>page.title</code> =&gt; <code>Post 12</code></p></li>
+<li><p><code>page.url</code> =&gt; <code>/2015/12/12/post-12/</code></p></li>
+<li><p><code>page.path</code> =&gt; <code>_posts/2015-12-12-post-12.md</code></p></li>
+</ul>
 
 <hr>
 
-<h4 id="vriables">Vriables</h4>
+<h4 id="vriables-for-page-or-post">Vriables for page or post</h4>
 
 <ul>
-<li><p><code>page.url</code> =&gt; <code>/2015/12/12/post-12/</code></p></li>
-<li><p><code>page.url_no_language</code> =&gt; <code>/2015/12/12/post-12/</code></p></li>
-<li><p><code>page.path</code> =&gt; <code>_posts/2015-12-12-post-12.md</code></p></li>
 <li><p><code>page.language</code> =&gt; <code>en</code></p></li>
 <li><p><code>page.is_default_language</code> =&gt; <code>true</code></p></li>
 </ul>
 
 <hr>
 
-<h4 id="all-of-the-pages-and-posts">All of the pages and posts</h4>
+<h4 id="variables-only-for-post">Variables only for post</h4>
+
+<ul>
+<li><p><code>page.next_in_language</code> =&gt; <code>_posts/2015-12-13-post-13.md</code> =&gt; <a href="/2015/12/13/post-13/">/2015/12/13/post-13/</a></p></li>
+<li><p><code>page.previous_in_language</code> =&gt; (<code>_posts/2015-12-11-post-11.md</code> =&gt;
+<a href="/2015/12/11/post-11/">/2015/12/11/post-11/</a>)</p></li>
+</ul>
+
+<hr>
+
+<h4 id="variables-for-site">Variables for site</h4>
 
 <ul>
 <li><p><code>site.pages</code></p>

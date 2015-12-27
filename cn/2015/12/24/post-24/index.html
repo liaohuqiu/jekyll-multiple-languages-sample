@@ -30,39 +30,47 @@
             <li role="presentation"><a href="/">English</a></li>
             <li class='active' role="presentation"><a href="/cn">中文</a></li>
             
+            <li class='pull-right' role="presentation"><a href="https://github.com/liaohuqiu/jekyll-multiple-languages-sample/tree/master">GitHub</a></li>
         </ul>
     </div>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-md-12" role="main">
-            <h1 id="_posts-2015-12-24-post-24-cn-md-gt-cn-2015-12-24-post-24">_posts/2015-12-24-post-24.cn.md =&gt; /cn/2015/12/24/post-24/</h1>
+            <h3 id="这个是文章-jekyll-document">这个是文章(<code>Jekyll::Document</code>)</h3>
 
-<h3 id="这个是示例文章-jekyll-document">这个是示例文章(<code>Jekyll::Document</code>)</h3>
+<p>这个是文章。</p>
 
-<p>这个是示例文章。</p>
-
-<p>这个是示例文章。</p>
-
-<p>这个是示例文章。</p>
-
-<p>这个是示例文章。</p>
+<ul>
+<li><p><code>page.id</code> =&gt; <code>/cn/2015/12/24/post-24</code></p></li>
+<li><p><code>page.date</code> =&gt; <code>2015-12-24 00:00:00 -0800</code></p></li>
+<li><p><code>page.title</code> =&gt; <code>Post 24.cn</code></p></li>
+<li><p><code>page.url</code> =&gt; <code>/cn/2015/12/24/post-24/</code></p></li>
+<li><p><code>page.path</code> =&gt; <code>_posts/2015-12-24-post-24.cn.md</code></p></li>
+</ul>
 
 <hr>
 
-<h4 id="变量">变量</h4>
+<h4 id="普通页面和文章页面的变量">普通页面和文章页面的变量</h4>
 
 <ul>
-<li><p><code>page.url</code> =&gt; <code>/cn/2015/12/24/post-24/</code></p></li>
-<li><p><code>page.url_no_language</code> =&gt; <code>/2015/12/24/post-24/</code></p></li>
-<li><p><code>page.path</code> =&gt; <code>_posts/2015-12-24-post-24.cn.md</code></p></li>
 <li><p><code>page.language</code> =&gt; <code>cn</code></p></li>
 <li><p><code>page.is_default_language</code> =&gt; <code>false</code></p></li>
 </ul>
 
 <hr>
 
-<h4 id="所有的页面和文章">所有的页面和文章</h4>
+<h4 id="仅在文章页面可用的变量">仅在文章页面可用的变量</h4>
+
+<ul>
+<li><p><code>page.next_in_language</code> =&gt; <code>_posts/2015-12-25-post-25.cn.md</code> =&gt; <a href="/cn/2015/12/25/post-25/">/cn/2015/12/25/post-25/</a></p></li>
+<li><p><code>page.previous_in_language</code> =&gt; (<code>_posts/2015-12-23-post-23.cn.md</code> =&gt;
+<a href="/cn/2015/12/23/post-23/">/cn/2015/12/23/post-23/</a>)</p></li>
+</ul>
+
+<hr>
+
+<h4 id="site-相关的变量">site 相关的变量</h4>
 
 <ul>
 <li><p><code>site.pages</code></p>
